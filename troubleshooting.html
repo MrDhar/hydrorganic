@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troubleshooting Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-content">
+      <div class="header-text">
+        <h1>Troubleshooting Assistant</h1>
+        <p>Get solutions for common hydroponic plant issues.</p>
+      </div>
+      <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <div class="container">
+      <div class="feature-card">
+        <h2>Describe Your Plant's Issue</h2>
+        <input type="text" id="symptom" placeholder="e.g., yellow leaves">
+        <button onclick="checkSymptom()" class="button">Check</button>
+        <div id="solution" class="solution-box"></div>
+      
+        <!-- Feedback Section -->
+        <div id="feedback" class="feedback-box">
+          <p>Was this solution helpful?</p>
+          <button onclick="submitFeedback('yes')">Yes</button>
+          <button onclick="submitFeedback('no')">No</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 Hydroponic Companion</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

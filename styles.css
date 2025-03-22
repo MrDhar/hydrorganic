@@ -1,0 +1,785 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header Styles with Background Image */
+  header {
+    background-image: url('hydroponicsimage.jpg'); /* Add your image file name */
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /* Center the image */
+    color: white; /* Ensure text is readable */
+    padding: 2rem 1rem; /* Adjust padding as needed */
+    text-align: center; /* Center the text */
+    height: 300px; /* Set a fixed height for the header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay for better text visibility */
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+  
+  .header-text h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Adjust font size as needed */
+  }
+  
+  .header-text p {
+    margin: 0;
+    font-size: 1.2rem; /* Adjust font size as needed */
+  }
+  
+  /* Navigation Styles */
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Card Container */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #4CAF50;
+  }
+  
+  .card p {
+    margin: 0 0 20px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Button Styles */
+  .button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Homepage Card Styles */
+  .homepage-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .homepage-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Add Icons to Homepage Cards */
+  .homepage-card::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    background-size: cover;
+  }
+  
+  /* Troubleshooting Icon */
+  .homepage-card:nth-child(1)::before {
+    background-image: url('https://img.icons8.com/color/96/plant-under-rain.png'); /* Example icon */
+  }
+  
+  /* Calculator Icon */
+  .homepage-card:nth-child(2)::before {
+    background-image: url('https://img.icons8.com/color/96/calculator.png'); /* Example icon */
+  }
+  
+  /* Calendar Icon */
+  .homepage-card:nth-child(3)::before {
+    background-image: url('https://img.icons8.com/color/96/calendar.png'); /* Example icon */
+  }
+  
+  /* Forum Icon */
+  .homepage-card:nth-child(4)::before {
+    background-image: url('https://img.icons8.com/color/96/forum.png'); /* Example icon */
+  }
+  
+  /* Feature Card Styles (for other pages) */
+  .feature-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-card h2 {
+    margin: 0 0 20px;
+    font-size: 1.8rem;
+    color: #4CAF50;
+  }
+  
+  .feature-card p {
+    margin: 0 0 20px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .feature-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .feature-card .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feature-card .button:hover {
+    background-color: #45a049;
+  }
+  
+  .solution-box,
+  .result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* FullCalendar Styles */
+  #calendar {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* Event Input Form Styles */
+  #event-form {
+    margin-bottom: 20px;
+  }
+  
+  #event-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #event-form button {
+    width: 100%;
+  }
+  
+  /* Feedback Box Styles */
+  .feedback-box {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .feedback-box button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .feedback-box button:hover {
+    background-color: #45a049;
+  }
+  
+  /* About Page Styles */
+  .about-section, .team-section {
+    margin-bottom: 2rem;
+  }
+  
+  .team-members {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 2rem);
+    text-align: center;
+  }
+  
+  /* Responsive Design for Team Members */
+  @media (max-width: 768px) {
+    .team-members {
+      flex-direction: column;
+    }
+  
+    .team-member {
+      flex: 1 1 100%;
+    }
+  } 
+ /* Header Styles for Troubleshooting Page */
+header {
+    background-image: url('hydroponicsimage.jpg'); /* Add your image file name */
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /* Center the image */
+    color: white; /* Ensure text is readable */
+    padding: 4rem 1rem; /* Increased padding for better spacing */
+    text-align: center; /* Center the text */
+    height: 300px; /* Set a fixed height for the header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Required for overlay */
+  }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  }
+  
+  .header-content {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 1; /* Bring content to the front */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    padding-bottom: 60px; /* Add space at the bottom for the link */
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+  
+  .header-text h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    font-weight: bold; /* Keep the main heading bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  }
+  
+  .header-text p {
+    margin: 10px 0 0; /* Add some space above the paragraph */
+    font-size: 1.5rem; /* Slightly larger font size */
+    font-weight: normal; /* Unbold the text below the heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  }
+  
+  .back-link {
+    position: absolute; /* Position the link absolutely */
+    bottom: 20px; /* Place it at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact center */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .back-link:hover {
+    color: #45a049; /* Change color on hover */
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Ensure the container takes up enough vertical space */
+  }
+  
+  .feature-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .feature-card h2 {
+    margin: 0 0 20px;
+    font-size: 1.8rem;
+    color: #4CAF50;
+  }
+  
+  .feature-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .feature-card .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feature-card .button:hover {
+    background-color: #45a049;
+  }
+  
+  .solution-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .feedback-box {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .feedback-box p {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .feedback-box button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-box button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 2rem;
+  }
+
+ /* Header Styles for Nutrient Mix Calculator */
+header {
+    background-image: url('hydroponicsimage.jpg'); /* Add your image file name */
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /* Center the image */
+    color: white; /* Ensure text is readable */
+    padding: 4rem 1rem; /* Increased padding for better spacing */
+    text-align: center; /* Center the text */
+    height: 300px; /* Set a fixed height for the header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Required for overlay */
+  }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  }
+  
+  .header-content {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 1; /* Bring content to the front */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    padding-bottom: 60px; /* Add space at the bottom for the link */
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+  
+  .header-text h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    font-weight: bold; /* Keep the main heading bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  }
+  
+  .header-text p {
+    margin: 10px 0 0; /* Add some space above the paragraph */
+    font-size: 1.5rem; /* Slightly larger font size */
+    font-weight: normal; /* Unbold the text below the heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  }
+  
+  .back-link {
+    position: absolute; /* Position the link absolutely */
+    bottom: 20px; /* Place it at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact center */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .back-link:hover {
+    color: #45a049; /* Change color on hover */
+  }
+ /* Header Styles for Growing Calendar Page */
+header {
+  background-image: url('hydroponicsimage.jpg'); /* Add your image file name */
+  background-size: cover; /* Ensure the image covers the entire header */
+  background-position: center; /* Center the image */
+  color: white; /* Ensure text is readable */
+  padding: 4rem 1rem; /* Increased padding for better spacing */
+  text-align: center; /* Center the text */
+  height: 300px; /* Set a fixed height for the header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Required for overlay */
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.header-content {
+  position: relative; /* Ensure content is above the overlay */
+  z-index: 1; /* Bring content to the front */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-bottom: 60px; /* Add space at the bottom for the link */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  font-weight: bold; /* Keep the main heading bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+.header-text p {
+  margin: 10px 0 0; /* Add some space above the paragraph */
+  font-size: 1.5rem; /* Slightly larger font size */
+  font-weight: normal; /* Unbold the text below the heading */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+.back-link {
+  position: absolute; /* Position the link absolutely */
+  bottom: 20px; /* Place it at the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for exact center */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Adjust font size */
+  transition: color 0.3s ease; /* Smooth color transition */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.back-link:hover {
+  color: #45a049; /* Change color on hover */
+}
+
+/* Main Content Styles */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; /* Ensure the container takes up enough vertical space */
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 800px; /* Adjusted for calendar width */
+  text-align: center;
+}
+
+.feature-card h2 {
+  margin: 0 0 20px;
+  font-size: 1.8rem;
+  color: #4CAF50;
+}
+
+.feature-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.feature-card .button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.feature-card .button:hover {
+  background-color: #45a049;
+}
+
+/* FullCalendar Styles */
+#calendar {
+  margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 2rem;
+}
+/* Header Styles for Community Forum Page */
+header {
+    background-image: url('hydroponicsimage.jpg'); /* Add your image file name */
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /* Center the image */
+    color: white; /* Ensure text is readable */
+    padding: 4rem 1rem; /* Increased padding for better spacing */
+    text-align: center; /* Center the text */
+    height: 300px; /* Set a fixed height for the header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Required for overlay */
+  }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  }
+  
+  .header-content {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 1; /* Bring content to the front */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    padding-bottom: 60px; /* Add space at the bottom for the link */
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+  
+  .header-text h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    font-weight: bold; /* Keep the main heading bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  }
+  
+  .header-text p {
+    margin: 10px 0 0; /* Add some space above the paragraph */
+    font-size: 1.5rem; /* Slightly larger font size */
+    font-weight: normal; /* Unbold the text below the heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  }
+  
+  .back-link {
+    position: absolute; /* Position the link absolutely */
+    bottom: 20px; /* Place it at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact center */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .back-link:hover {
+    color: #45a049; /* Change color on hover */
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Ensure the container takes up enough vertical space */
+  }
+  
+  .feature-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .feature-card h2 {
+    margin: 0 0 20px;
+    font-size: 1.8rem;
+    color: #4CAF50;
+  }
+  
+  .feature-card p {
+    margin: 0 0 20px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .feature-card .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feature-card .button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 2rem;
+  }

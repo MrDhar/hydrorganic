@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <a href="index.html" class="button">Back to Home</a>
+  </header>
+  <main>
+    <div class="container">
+      <div class="feature-card">
+        <h2>Add New Entry</h2>
+        <form id="add-entry-form">
+          <label for="keywords">Keywords (comma-separated):</label>
+          <input type="text" id="keywords" required>
+          <label for="solution">Solution:</label>
+          <textarea id="solution" required></textarea>
+          <button type="submit" class="button">Add Entry</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>© 2023 Hydroponic Companion</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Growing Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-content">
+      <div class="header-text">
+        <h1>Growing Calendar</h1>
+        <p>Plan and track your hydroponic growing schedule.</p>
+      </div>
+      <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <div class="container">
+      <div class="feature-card">
+        <!-- Event Input Form -->
+        <h2>Add an Event</h2>
+        <form id="event-form">
+          <input type="text" id="event-title" placeholder="Event Title" required>
+          <input type="date" id="event-date" required>
+          <button type="submit" class="button">Add Event</button>
+        </form>
+
+        <!-- Calendar -->
+        <div id="calendar"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2023 Hydroponic Companion</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

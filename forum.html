@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Community Forum</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <!-- Header Section -->
@@ -14,24 +16,66 @@
         <h1>Community Forum</h1>
         <p>Join the discussion and share your tips!</p>
       </div>
-      <a href="index.html" class="back-link">Back to Home</a>
+      <!-- Removed old back link -->
     </div>
   </header>
 
   <!-- Main Content Section -->
   <main>
+    <!-- New Back Button -->
+    <div class="back-button-container">
+      <button class="back-home-btn" onclick="window.location.href='index.html'">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </button>
+    </div>
+
     <div class="container">
-      <div class="feature-card">
-        <h2>Visit the Forum</h2>
-        <p>Connect with other hydroponic enthusiasts and get answers to your questions.</p>
-        <a href="https://hydrorganic.boards.net" target="_blank" class="button">Go to Forum</a>
+      <div class="forum-card">
+        <div class="forum-header">
+          <h2><i class="fas fa-comments"></i> Hydroponic Community</h2>
+          <p>Connect with other hydroponic enthusiasts and get answers to your questions.</p>
+        </div>
+
+        <div class="forum-cta">
+          <a href="https://hydrorganic.boards.net" target="_blank" class="forum-btn">
+            <i class="fas fa-external-link-alt"></i> Visit Our Forum
+          </a>
+          <div class="forum-stats">
+            <div class="stat-item">
+              <i class="fas fa-users"></i>
+              <span>1,200+ Members</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-comment-dots"></i>
+              <span>3,400+ Discussions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recent-topics">
+          <h3><i class="fas fa-bolt"></i> Trending Topics</h3>
+          <div class="topic-list">
+            <div class="topic-item">
+              <i class="fas fa-seedling"></i>
+              <span>Best nutrients for lettuce</span>
+            </div>
+            <div class="topic-item">
+              <i class="fas fa-tint"></i>
+              <span>pH level troubleshooting</span>
+            </div>
+            <div class="topic-item">
+              <i class="fas fa-lightbulb"></i>
+              <span>LED grow light recommendations</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
 
   <!-- Footer Section -->
   <footer>
-    <p>© 2023 Hydroponic Companion</p>
+    <p>© 2025 Hydroponic Companion</p>
   </footer>
 </body>
 </html>

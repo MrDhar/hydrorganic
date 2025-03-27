@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydroponic Plant Requirements | Hydrorganic</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="header-text">
+        <h1>Hydroponic Plant Requirements</h1>
+        <p>Find optimal growing conditions for hydroponic plants</p>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+           
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input type="text" id="plant-search" placeholder="Search plants (e.g., lettuce, basil)">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div class="table-container">
+      <table id="plant-table">
+        <thead>
+          <tr>
+            <th>Plant</th>
+            <th>pH Range</th>
+            <th>Temp (°C)</th>
+            <th>Light (Lux)</th>
+            <th>Nutrients</th>
+            <th>Growth Time</th>
+          </tr>
+        </thead>
+        <tbody id="plant-table-body">
+          <!-- Initial empty state -->
+          <tr id="empty-state">
+            <td colspan="6">Search for a plant to see its requirements</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="plant-details" class="plant-details">
+      <!-- Detailed plant info will appear here when a plant is selected -->
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Hydroponic Companion</p>
+  </footer>
+
+  <!-- JavaScript file linked here - must be exactly like this -->
+  <script src="plant-data.js"></script>
+</body>
+</html>

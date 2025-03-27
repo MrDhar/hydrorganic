@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nutrient Mixing Calculator</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Add Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <!-- Header Section -->
@@ -14,25 +16,38 @@
         <h1>Nutrient Mixing Calculator</h1>
         <p>Calculate the right nutrient mix for your plants.</p>
       </div>
-      <a href="index.html" class="back-link">Back to Home</a>
+      <!-- Removed the old back link from header -->
     </div>
   </header>
 
   <!-- Main Content Section -->
   <main>
+    <!-- New Back Button - positioned at top of main content -->
+    <div class="back-button-container">
+      <button class="back-home-btn" onclick="window.location.href='index.html'">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </button>
+    </div>
+
     <div class="container">
       <div class="feature-card">
         <h2>Enter Water Volume</h2>
-        <input type="number" id="waterVolume" placeholder="Water Volume (L)">
-        <button onclick="calculateNutrients()" class="button">Calculate</button>
-        <div id="result" class="solution-box"></div>
+        <div class="input-group">
+          <label for="waterVolume">Water Volume (Liters)</label>
+          <input type="number" id="waterVolume" placeholder="e.g., 10">
+          <span class="input-unit">L</span>
+        </div>
+        <button onclick="calculateNutrients()" class="button calculate-btn">
+          <i class="fas fa-calculator"></i> Calculate
+        </button>
+        <div id="result" class="result-box"></div>
       </div>
     </div>
   </main>
 
   <!-- Footer Section -->
   <footer>
-    <p>© 2023 Hydroponic Companion</p>
+    <p>© 2025 Hydroponic Companion</p>
   </footer>
   <script src="app.js"></script>
 </body>
